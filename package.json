@@ -1,0 +1,116 @@
+{
+  "name": "nextjs-tfjs-cnn",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "DEBUG='app:*' next",
+    "build": "next build && next export -o out",
+    "serve": "serve out -l 3000",
+    "test": "TZ='UTC' jest --coverage",
+    "test:watch": "DEBUG='app:*' npm run test -- --watch",
+    "eslint": "eslint '**/*.{js,ts,tsx}'",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write '**/*.{js,ts,tsx,json,md,css,yaml,yml}' '*.{js,ts,tsx,json,md,css,yaml,yml}'",
+    "changelog": "conventional-changelog --infile ./CHANGELOG.md --same-file --release-count 0 --output-unreleased"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.4.0",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/styles": "^4.3.3",
+    "@tensorflow/tfjs": "^1.2.9",
+    "autoprefixer": "^9.6.1",
+    "babel-jest": "^25.0.0",
+    "clean-css": "^4.2.1",
+    "clsx": "^1.0.4",
+    "debug": "^4.1.1",
+    "next": "^9.0.6-canary.1",
+    "postcss": "^7.0.18",
+    "ramda": "^0.26.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-dropzone": "^10.1.8",
+    "waait": "^1.0.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.1.0",
+    "@testing-library/react": "^9.1.4",
+    "@types/autoprefixer": "^9.6.1",
+    "@types/clean-css": "^4.2.1",
+    "@types/debug": "^4.1.5",
+    "@types/jest": "^24.0.18",
+    "@types/next": "^8.0.6",
+    "@types/ramda": "^0.26.21",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "@zeit/next-css": "^1.0.1",
+    "conventional-changelog-cli": "^2.0.23",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "hsu-scripts": "^1.0.7",
+    "husky": "^3.0.5",
+    "jest": "^25.0.0",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "serve": "^11.1.0",
+    "stop-runaway-react-effects": "^1.2.0",
+    "typescript": "^3.7.0-dev.20190906"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest.setup.ts"
+    ],
+    "transform": {
+      "^.+\\.(tsx?|jsx?)$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "**/components/**/*.{ts,tsx}",
+      "**/utils/**/*.{ts,tsx}",
+      "**/hooks/**/*.{ts,tsx}",
+      "!**/__tests__/**",
+      "!**/node_modules/**"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/out/"
+    ],
+    "resetMocks": true,
+    "resetModules": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 49,
+        "functions": 61,
+        "lines": 67,
+        "statements": 66
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "./eslint.js"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,json,md,css,yaml,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "description": "",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evenchange4/nextjs-tfjs-cnn/issues",
+    "email": "evenchange4@gmail.com"
+  },
+  "homepage": "https://github.com/evenchange4/nextjs-tfjs-cnn#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evenchange4/nextjs-tfjs-cnn.git"
+  }
+}
