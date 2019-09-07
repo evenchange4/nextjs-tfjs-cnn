@@ -67,16 +67,48 @@ $ docker run -it --rm \
 
 ## Client side
 
-## Install
+### Install
 
 ```bash
 yarn install --pure-lockfile
 ```
 
-## Development
+### Development
 
 - node 12.10.0
 - yarn 1.17.3
+
+### Deploy to GitHub pages
+
+> Any git tags.
+
+1. Update `CHANGELOG.md`
+2. Create a new git tag
+
+```console
+$ npm version patch
+```
+
+### Test
+
+```
+$ yarn run format
+$ yarn run eslint
+$ yarn run type-check
+$ yarn run test:watch
+```
+
+---
+
+## CONTRIBUTING
+
+- ⇄ Pull requests and ★ Stars are always welcome.
+- For bugs and feature requests, please create an issue.
+- Pull requests must be accompanied by passing automated tests (`$ yarn run test`).
+
+## [CHANGELOG](CHANGELOG.md)
+
+## [LICENSE](LICENSE)
 
 ## Reference
 
