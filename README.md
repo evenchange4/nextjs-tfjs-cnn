@@ -66,6 +66,19 @@ $ docker run -it --rm \
 
 `./python/output/model-tfjs/`
 
+## Client side
+
+## Install
+
+```bash
+yarn install --pure-lockfile
+```
+
+## Development
+
+- node 12.10.0
+- yarn 1.17.3
+
 ## Reference
 
 - [Keras CNN Dog or Cat Classification](https://www.kaggle.com/uysimty/keras-cnn-dog-or-cat-classification)

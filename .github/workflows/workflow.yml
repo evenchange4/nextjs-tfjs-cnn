@@ -1,0 +1,27 @@
+name: Main workflow
+on: [pull_request, push]
+
+jobs:
+  run:
+    name: Node matrix ${{ matrix.node }}
+    runs-on: ubuntu-16.04
+    strategy:
+      matrix:
+        node: ['12.10.0']
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+
+      - name: Setup node
+        uses: actions/setup-node@master
+        with:
+          node-version: ${{ matrix.node }}
+
+      - run: yarn install --pure-lockfile
+      - run: yarn run eslint
+      - run: yarn run type-check
+      - run: yarn run test
+      - run: yarn run build
+      - name: Runtime Verify
+        run: git rev-parse HEAD > out/_version && ls -al out/
