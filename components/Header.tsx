@@ -8,6 +8,7 @@ import {
   createStyles,
 } from '@material-ui/core';
 import { PROJECT_NAME } from '../utils/constants';
+import IconGitHub from './IconGitHub';
 
 const useStyles = makeStyles<Theme>(theme =>
   createStyles({
@@ -35,6 +36,9 @@ const Header = React.memo(function Header() {
       <Toolbar>
         <Box fontSize="h6.fontSize" flexGrow={1}>
           {PROJECT_NAME}
+        </Box>
+        <Box>
+          <IconGitHub />
         </Box>
       </Toolbar>
     </AppBar>
