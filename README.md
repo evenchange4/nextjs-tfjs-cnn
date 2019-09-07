@@ -25,9 +25,8 @@ Using kaggle dogs-vs-cats dataset.
 
 ## Training
 
-https://colab.research.google.com/drive/1JnUzEH62tgvd5PPc1M9dSEHvzrGhCHAA#scrollTo=q9LELWcnd3Dv
-
 [Notebook](./python/vgg16.ipynb)
+[Clone](https://colab.research.google.com/drive/1JnUzEH62tgvd5PPc1M9dSEHvzrGhCHAA#scrollTo=q9LELWcnd3Dv)
 
 ### Output
 
