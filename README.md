@@ -87,6 +87,7 @@ yarn install --pure-lockfile
 
 ```console
 $ npm version patch
+$ npm run changelog
 ```
 
 ### Test
