@@ -1,4 +1,5 @@
 import * as tf from '@tensorflow/tfjs';
+import { IMAGE_HEIGHT, IMAGE_WIDTH } from './constants';
 
 /**
  * ref: https://github.com/himanshu987/VGG16-with-TensorflowJs/blob/master/client/predict.js
@@ -11,15 +12,16 @@ export default function preprocessImage(
 ) {
   const tensor = tf.browser
     .fromPixels(image)
-    .resizeNearestNeighbor([224, 224])
+    .resizeNearestNeighbor([IMAGE_HEIGHT, IMAGE_WIDTH])
     .toFloat();
 
   if (modelName === 'vgg') {
     const meanImageNetRGB = tf.tensor1d([123.68, 116.779, 103.939]);
-    return tensor
+    const resultTensor = tensor
       .sub(meanImageNetRGB)
       .reverse(2) // using the conventions from vgg16 documentation
       .expandDims();
+    return resultTensor;
   }
 
   if (modelName === 'mobilenet') {
