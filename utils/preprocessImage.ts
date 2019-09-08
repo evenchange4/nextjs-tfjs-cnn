@@ -1,5 +1,4 @@
 import * as tf from '@tensorflow/tfjs';
-import { IMAGE_HEIGHT, IMAGE_WIDTH } from './constants';
 
 /**
  * ref: https://github.com/himanshu987/VGG16-with-TensorflowJs/blob/master/client/predict.js
@@ -12,7 +11,7 @@ export default function preprocessImage(
 ) {
   const tensor = tf.browser
     .fromPixels(image)
-    .resizeNearestNeighbor([IMAGE_HEIGHT, IMAGE_WIDTH])
+    .resizeNearestNeighbor([224, 224])
     .toFloat();
 
   if (modelName === 'vgg') {

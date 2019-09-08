@@ -1,13 +1,14 @@
-/* global self */
-/* eslint-disable no-restricted-globals, no-undef  */
-import * as tf from '@tensorflow/tfjs';
-import waait from 'waait';
-import {
-  TFJS_MODEL_PATH,
-  IMAGE_HEIGHT,
-  IMAGE_WIDTH,
-  IMAGE_CHANNELS,
-} from './constants';
+/* eslint-disable no-console */
+/* eslint-disable no-restricted-globals */
+/* eslint-disable no-undef */
+const TFJS =
+  'https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2.9/dist/tf.min.js';
+const TFJS_MODEL_PATH = '/static/model-tfjs/model.json';
+
+const wait = (amount = 0) =>
+  new Promise(resolve => setTimeout(resolve, amount));
+
+importScripts(TFJS);
 
 tf.setBackend('webgl');
 
@@ -31,15 +32,10 @@ onmessage = async ({ data: { key, data } }) => {
     }
 
     // TODO: web worker improvement to avoid main thread block
-    await waait();
+    await wait();
 
     const timePredict = performance.now();
-    const imageTensor = tf.tensor4d(data, [
-      1,
-      IMAGE_HEIGHT,
-      IMAGE_WIDTH,
-      IMAGE_CHANNELS,
-    ]);
+    const imageTensor = tf.tensor4d(data, [1, 224, 224, 3]);
     console.log({ imageTensor });
     imageTensor.print();
     const predictTensor = model.predict(imageTensor);

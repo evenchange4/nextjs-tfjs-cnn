@@ -28,8 +28,7 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-dropzone": "^10.1.8",
-    "round-to": "^4.0.0",
-    "waait": "^1.0.5"
+    "round-to": "^4.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.1.0",
