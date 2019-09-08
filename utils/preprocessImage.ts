@@ -17,11 +17,10 @@ export default function preprocessImage(
 
   if (modelName === 'vgg') {
     const meanImageNetRGB = tf.tensor1d([123.68, 116.779, 103.939]);
-    const resultTensor = tensor
+    return tensor
       .sub(meanImageNetRGB)
       .reverse(2) // using the conventions from vgg16 documentation
       .expandDims();
-    return resultTensor;
   }
 
   if (modelName === 'mobilenet') {
