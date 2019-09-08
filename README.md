@@ -1,9 +1,6 @@
 # Next.js Tensorflow.js CNN
 
-> Use pre-trained VGG16 models in Keras.
-> Transfer Learning https://github.com/tensorflow/tfjs-examples/blob/master/mnist-transfer-cnn/README.md
-
-Using kaggle dogs-vs-cats dataset.
+> Classifier using Keras VGG16 transfer learning with kaggle dogs vs. cats dataset.
 
 <table>
   <tr>
