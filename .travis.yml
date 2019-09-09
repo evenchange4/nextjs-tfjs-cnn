@@ -19,7 +19,7 @@ install:
 script:
   - yarn run eslint
   - yarn run type-check
-  # - yarn run test
+  - yarn run test
   - yarn run build
   # Runtime Verify
   - git rev-parse HEAD > out/_version && ls -al out/

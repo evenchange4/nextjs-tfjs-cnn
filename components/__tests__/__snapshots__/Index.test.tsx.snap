@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render <Index /> 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root MuiBox-root-2"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation4 MuiAppBar-root MuiAppBar-positionFixed makeStyles-appBar-3 MuiAppBar-colorPrimary mui-fixed"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-45"
+        >
+          Dogs vs. Cats - Next.js Tensorflow.js CNN
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-46"
+        >
+          <a
+            class="makeStyles-link-47"
+            href="https://github.com/evenchange4/nextjs-tfjs-cnn"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <button
+              aria-label="show 17 new notifications"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiIconButton-label"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"
+                  />
+                </svg>
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div
+      class="MuiBox-root MuiBox-root-70 makeStyles-footerSelector-69"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-regular MuiToolbar-gutters"
+      />
+      <div
+        class="MuiBox-root MuiBox-root-71"
+      >
+        <div
+          class="MuiBox-root MuiBox-root-72"
+        >
+          Run inference on the browser to recognize dogs and cats with pre-trained CNN VGG16 model, so the image will not be uploaded to anywhere.
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-73"
+        >
+          The model of Tensorflow.js will be 
+          <em>
+            downloaded
+          </em>
+           when you upload an image at first time.
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-74"
+        >
+          <div
+            class="makeStyles-dropzone-75"
+            tabindex="0"
+          >
+            <input
+              accept="image/*"
+              autocomplete="off"
+              style="display: none;"
+              tabindex="-1"
+              type="file"
+            />
+            <p>
+              Drag and drop one image here, or click to select file
+            </p>
+            <em>
+              (Only *.jpeg and *.png images will be accepted)
+            </em>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root MuiBox-root-79"
+        />
+      </div>
+      <footer>
+        <div
+          class="MuiBox-root MuiBox-root-80"
+        >
+          Made with 
+          <div
+            class="MuiBox-root MuiBox-root-81"
+          >
+            ♥ 
+          </div>
+          by 
+          <a
+            class="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorInherit"
+            href="https://michaelhsu.tw/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            @evenchange4
+          </a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -44,6 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^2.1.0",
     "@typescript-eslint/parser": "^2.1.0",
     "@zeit/next-css": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.2-canary.0",
     "@zeit/next-workers": "^1.0.1-canary.1",
     "codecov": "^3.5.0",
     "conventional-changelog-cli": "^2.0.23",
@@ -81,10 +82,10 @@
     "resetModules": true,
     "coverageThreshold": {
       "global": {
-        "branches": 49,
-        "functions": 61,
-        "lines": 67,
-        "statements": 66
+        "branches": 15,
+        "functions": 44,
+        "lines": 43,
+        "statements": 41
       }
     }
   },
