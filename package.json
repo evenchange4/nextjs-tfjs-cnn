@@ -104,7 +104,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "description": "",
+  "description": "🐕 🐈 Classifier using Keras VGG16 transfer learning with kaggle dogs vs. cats dataset.",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
   "bugs": {

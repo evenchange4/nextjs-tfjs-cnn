@@ -1,6 +1,6 @@
 # Next.js Tensorflow.js CNN
 
-> Classifier using Keras VGG16 transfer learning with kaggle dogs vs. cats dataset.
+> 🐕 🐈 Classifier using Keras VGG16 transfer learning with kaggle dogs vs. cats dataset.
 >
 > Further reading: [中文 Inference on the Browser with Tensorflow JS]()
 
