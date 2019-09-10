@@ -1,5 +1,16 @@
 ## Unreleased (2019-09-10)
 
+## <small>1.0.1 (2019-09-10)</small>
+
+- 1.0.1 ([6179cf2](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/6179cf2))
+- fix(Dropzone): cursor style ([1024560](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/1024560))
+- fix(favicon): use icon instead of png ([9761aeb](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/9761aeb))
+- feat(analytics): add ga ([59ab173](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/59ab173))
+- feat(ga): tracking two events ([3eca580](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/3eca580))
+- chore(deps): ncu update ([e5d6140](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/e5d6140))
+- docs(CHANGELOG): release 1.0.0 ([1736218](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/1736218))
+- docs(README): add medium link ([ac858c4](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/ac858c4))
+
 ## 1.0.0 (2019-09-10)
 
 - 1.0.0 ([2cce9f7](https://github.com/evenchange4/nextjs-tfjs-cnn/commit/2cce9f7))
