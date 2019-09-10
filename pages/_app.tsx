@@ -6,7 +6,8 @@ import { ThemeProvider } from '@material-ui/styles';
 import { CssBaseline } from '@material-ui/core';
 import { hijackEffects } from 'stop-runaway-react-effects';
 import theme from '../utils/theme';
-import { PROJECT_NAME } from '../utils/constants';
+import { PROJECT_NAME, GA_ID } from '../utils/constants';
+import autotrack from '../utils/autotrack';
 
 /**
  * Catches situations when a react use(Layout)Effect runs repeatedly in rapid succession
@@ -19,6 +20,7 @@ class MyApp extends App {
   static displayName = 'MyApp';
 
   public componentDidMount() {
+    autotrack(GA_ID);
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles && jssStyles.parentNode) {

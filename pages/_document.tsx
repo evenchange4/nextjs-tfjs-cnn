@@ -44,6 +44,8 @@ class MyDocument extends Document<{}> {
         <body>
           <Main />
           <NextScript />
+          <script async src="//www.google-analytics.com/analytics.js" />
+          <script async src="//unpkg.com/autotrack@2.4.1/autotrack.js" />
         </body>
       </Html>
     );

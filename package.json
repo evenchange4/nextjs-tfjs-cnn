@@ -36,6 +36,7 @@
     "@types/autoprefixer": "^9.6.1",
     "@types/clean-css": "^4.2.1",
     "@types/debug": "^4.1.5",
+    "@types/google.analytics": "^0.0.40",
     "@types/jest": "^24.0.18",
     "@types/next": "^8.0.6",
     "@types/ramda": "^0.26.21",
@@ -82,10 +83,10 @@
     "resetModules": true,
     "coverageThreshold": {
       "global": {
-        "branches": 15,
-        "functions": 44,
-        "lines": 43,
-        "statements": 41
+        "branches": 12,
+        "functions": 43,
+        "lines": 40,
+        "statements": 38
       }
     }
   },
