@@ -28,11 +28,11 @@
 
 ## Training
 
-Use [Jupyter Notebook](./python/vgg16.ipynb) to [save Keras models](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) as HDF5 files at `./python/output/model.h5`
+Use [Jupyter Notebook](./python/vgg16.ipynb) to [save Keras models](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) as HDF5 file to `./python/output/model.h5`
 
 ## Convert to model of Tensorflow.js
 
-Use [tfjs-converter](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter) to convert the model format via docker image at `./python/output/model-tfjs/`:
+Use [tfjs-converter](https://github.com/tensorflow/tfjs/tree/master/tfjs-converter) to convert the model format via docker image under `./python/output/model-tfjs/`:
 
 ```bash
 $ docker run -it --rm \
@@ -54,7 +54,7 @@ yarn install --pure-lockfile
 # cp -r python/output/model-tfjs static
 ```
 
-### Development
+### Develop
 
 - node 12.10.0
 - yarn 1.17.3
