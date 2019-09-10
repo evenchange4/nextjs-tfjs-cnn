@@ -13,9 +13,9 @@
     "changelog": "conventional-changelog --infile ./CHANGELOG.md --same-file --release-count 0 --output-unreleased"
   },
   "dependencies": {
-    "@material-ui/core": "^4.4.0",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.3.3",
+    "@material-ui/core": "^4.4.1",
+    "@material-ui/icons": "^4.4.1",
+    "@material-ui/styles": "^4.4.1",
     "@tensorflow/tfjs": "^1.2.9",
     "autoprefixer": "^9.6.1",
     "babel-jest": "^25.0.0",
@@ -42,8 +42,8 @@
     "@types/ramda": "^0.26.21",
     "@types/react": "^16.9.2",
     "@types/react-dom": "^16.9.0",
-    "@typescript-eslint/eslint-plugin": "^2.1.0",
-    "@typescript-eslint/parser": "^2.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.2.0",
+    "@typescript-eslint/parser": "^2.2.0",
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-typescript": "^1.1.2-canary.0",
     "@zeit/next-workers": "^1.0.1-canary.1",
@@ -58,7 +58,7 @@
     "prettier": "^1.18.2",
     "serve": "^11.1.0",
     "stop-runaway-react-effects": "^1.2.0",
-    "typescript": "^3.7.0-dev.20190906",
+    "typescript": "^3.7.0-dev.20190910",
     "worker-loader": "^2.0.0"
   },
   "jest": {
@@ -86,7 +86,7 @@
         "branches": 12,
         "functions": 43,
         "lines": 40,
-        "statements": 38
+        "statements": 37
       }
     }
   },
