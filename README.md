@@ -2,7 +2,7 @@
 
 > 🐕 🐈 Classifier using Keras VGG16 transfer learning with kaggle dogs vs. cats dataset.
 >
-> Further reading: [中文 Inference on the Browser with Tensorflow JS]()
+> Further reading: [中文 Inference on the Browser with Tensorflow JS](https://medium.com/@evenchange4/inference-on-the-browser-with-tensorflow-js-c7b4de863a2a)
 
 ![screenshot](./docs/screenshot.png)
 
