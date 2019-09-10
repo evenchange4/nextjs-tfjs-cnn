@@ -26,6 +26,7 @@ const useStyles = makeStyles<Theme>(theme =>
       '&:focus': {
         borderColor: theme.palette.primary.main,
       },
+      cursor: 'pointer',
     },
     dragActive: {
       borderColor: theme.palette.primary.main,
