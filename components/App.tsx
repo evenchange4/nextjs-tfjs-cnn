@@ -1,3 +1,4 @@
+/* global ga */
 import * as React from 'react';
 import * as R from 'ramda';
 import debug from 'debug';
@@ -72,6 +73,12 @@ const App = React.memo(function App() {
               }
               case 'LOAD_MODEL_END': {
                 setLoadModel(data.payload);
+                ga('send', {
+                  hitType: 'event',
+                  eventCategory: 'Model',
+                  eventAction: 'onLoad',
+                  eventValue: data.payload,
+                });
                 break;
               }
               case 'PREDICT_END': {
@@ -80,6 +87,13 @@ const App = React.memo(function App() {
                   ...prevResult,
                   [key]: { ...prevResult[key], label, duration },
                 }));
+                ga('send', {
+                  hitType: 'event',
+                  eventCategory: 'Image',
+                  eventAction: 'onDrop',
+                  eventLabel: label,
+                  eventValue: duration,
+                });
                 break;
               }
               default:
