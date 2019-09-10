@@ -14,7 +14,7 @@ class MyDocument extends Document<{}> {
         <Head>
           <meta name="description" content={PROJECT_DESC} />
           <meta charSet="utf-8" />
-          <link rel="icon" type="image/png" href="/static/images/favicon.png" />
+          <link rel="icon" href="/static/images/favicon.ico" />
           {/* Note: Optimizing Google Fonts Performance https://www.smashingmagazine.com/2019/06/optimizing-google-fonts-performance/ */}
           <link rel="dns-prefetch" href="//fonts.googleapis.com" />
           <link
