@@ -1,5 +1,5 @@
 name: Main workflow
-on: [pull_request, push]
+on: [push, pull_request]
 
 jobs:
   run:
@@ -23,5 +23,3 @@ jobs:
       - run: yarn run type-check
       - run: yarn run test
       - run: yarn run build
-      - name: Runtime Verify
-        run: git rev-parse HEAD > out/_version && ls -al out/
