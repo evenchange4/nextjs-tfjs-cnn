@@ -59,21 +59,19 @@ yarn install --pure-lockfile
 - node 12.10.0
 - yarn 1.17.3
 
-### Deploy to GitHub pages
+### Deploy
 
-> Any git tags.
+Any commits pushed to master branch.
 
-1. Update `CHANGELOG.md`
-2. Create a new git tag
+### Changelog
 
-```console
-$ npm version patch
-$ npm run changelog
+```bash
+npm run changelog
 ```
 
 ### Test
 
-```
+```bash
 $ yarn run format
 $ yarn run eslint
 $ yarn run type-check
