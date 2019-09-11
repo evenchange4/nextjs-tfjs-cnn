@@ -23,3 +23,8 @@ jobs:
       - run: yarn run type-check
       - run: yarn run test
       - run: yarn run build
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1.0.2
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
