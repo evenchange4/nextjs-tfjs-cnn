@@ -27,7 +27,7 @@
     "ramda": "0.26.1",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-dropzone": "10.1.8",
+    "react-dropzone": "10.2.2",
     "round-to": "4.0.0"
   },
   "devDependencies": {
