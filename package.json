@@ -55,7 +55,7 @@
     "jest": "25.0.0",
     "lint-staged": "9.2.5",
     "prettier": "1.18.2",
-    "serve": "11.1.0",
+    "serve": "11.3.2",
     "stop-runaway-react-effects": "1.2.0",
     "typescript": "3.7.0-dev.20190910",
     "worker-loader": "2.0.0"
