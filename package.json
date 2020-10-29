@@ -25,8 +25,8 @@
     "next": "9.0.6-canary.1",
     "postcss": "7.0.18",
     "ramda": "0.26.1",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
+    "react": "16.14.0",
+    "react-dom": "16.14.0",
     "react-dropzone": "10.1.8",
     "round-to": "4.0.0"
   },
