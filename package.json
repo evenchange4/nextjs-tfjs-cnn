@@ -57,7 +57,7 @@
     "prettier": "1.18.2",
     "serve": "11.1.0",
     "stop-runaway-react-effects": "1.2.0",
-    "typescript": "3.7.0-dev.20190910",
+    "typescript": "3.9.9",
     "worker-loader": "2.0.0"
   },
   "jest": {
