@@ -7,7 +7,7 @@ const withWorkers = require('@zeit/next-workers');
 module.exports = () =>
   withWorkers(
     withCSS({
-      // Note: Disabling file-system routing. ref: https://github.com/zeit/next.js#disabling-file-system-routing
+      // Note: Disabling file-system routing. ref: https://nextjs.org/docs/advanced-features/custom-server#disabling-file-system-routing
       useFileSystemPublicRoutes: false,
 
       // Note: export /schedule/index.html instead of /schedule.html
