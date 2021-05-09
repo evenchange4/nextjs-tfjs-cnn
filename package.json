@@ -13,9 +13,9 @@
     "changelog": "conventional-changelog --infile ./CHANGELOG.md --same-file --release-count 0 --output-unreleased"
   },
   "dependencies": {
-    "@material-ui/core": "4.4.1",
-    "@material-ui/icons": "4.4.1",
-    "@material-ui/styles": "4.4.1",
+    "@material-ui/core": "4.11.4",
+    "@material-ui/icons": "4.11.2",
+    "@material-ui/styles": "4.11.4",
     "@tensorflow/tfjs": "1.2.9",
     "autoprefixer": "9.6.1",
     "babel-jest": "25.0.0",
