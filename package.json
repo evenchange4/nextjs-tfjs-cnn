@@ -23,7 +23,7 @@
     "clsx": "1.0.4",
     "debug": "4.1.1",
     "next": "9.0.6-canary.1",
-    "postcss": "7.0.18",
+    "postcss": "7.0.36",
     "ramda": "0.26.1",
     "react": "16.9.0",
     "react-dom": "16.9.0",
